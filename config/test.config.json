@@ -1,0 +1,12 @@
+{
+	"service_name"	: "test",
+	"source_path"	: "src/test/api.php",
+	"protected"		: true,
+	"methods"		: {
+		"protected_test" : true
+	},
+	"open_methods"	: {
+		
+		"open_test"	: true
+	}
+}
