@@ -5,19 +5,19 @@ Every service is self contained in its own folder with the related config JSON f
 
 The flow can't be easier than this:
 
--1 Every time a request is made service and endpoint are evaluated from the URL
--2 The core code check for the service presence within the config folder
--3 If found, it will validate if the endpoint requested is present and if it is an open or protected method.
--4 Once the request is fully validated (for protected method the code needs also to validate `token_id` and `secret_id` against db) include the service folder.
--5 Within your service folder you define the logic and the consequent data for each end point that will be returned to the core code in order to be published by the api. 
+- Every time a request is made service and endpoint are evaluated from the URL
+- The core code check for the service presence within the config folder
+- If found, it will validate if the endpoint requested is present and if it is an open or protected method.
+- Once the request is fully validated (for protected method the code needs also to validate `token_id` and `secret_id` against db) include the service folder.
+- Within your service folder you define the logic and the consequent data for each end point that will be returned to the core code in order to be published by the api. 
 
 The Api Framework comes with the following basic features:
 
--a HTTP status codes
--b Open and Protected Methods via token and secret id
--c Automatic creation of table and related users and credential for each service
--d Debug info via `$API->API_show_env`
--e Reserved internal authentication endpoint
+- HTTP status codes
+- Open and Protected Methods via token and secret id
+- Automatic creation of table and related users and credential for each service
+- Debug info via `$API->API_show_env`
+- Reserved internal authentication endpoint
 
 ## Example Included ##
 
